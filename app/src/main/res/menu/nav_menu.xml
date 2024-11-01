@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn = "navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="Inicio" />
+
+        <item
+            android:id="@+id/nav_politica"
+            android:icon="@drawable/home"
+            android:title="Politica" />
+        <item
+            android:id="@+id/nav_deportes"
+            android:icon="@drawable/home"
+            android:title="Deportes" />
+
+        <item
+            android:id="@+id/nav_entrenimiento"
+            android:icon="@drawable/home"
+            android:title="Entretenimiento" />
+
+        <item
+            android:id="@+id/nav_internacional"
+            android:icon="@drawable/home"
+            android:title="Internacional" />
+
+
+    </group>
+
+    <item
+        android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_salir"
+                android:icon="@color/black"
+                android:title="Salir"/>
+        </menu>
+    </item>
+</menu>
