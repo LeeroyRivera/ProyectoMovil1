@@ -1,16 +1,137 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".PoliticaFragment">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Politica"
-        android:textSize="30sp"
-        android:layout_centerInParent="true"
-        android:textColor="@color/azulito"/>
 
-</RelativeLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center">>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:gravity="center"
+    android:text="Politica"
+    android:textSize="48sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Elecciones EEUU"
+        android:textSize="34sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"></LinearLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="614dp"
+        android:text="Nueva encuesta muestra el respaldo de los votantes latinos a Harris en Pennsylvania Una encuesta, relizada por Univision y YouGov, muestra que el 64% de los votantes latinos en Pensilvania apoya a Kamala Harris, mientras que el 30% respalda a Donald Trump. El sondeo se llevó a cabo entre el 29 de octubre y el 3 de noviembre a 400 votantes registrados, y se produce después de los comentarios despectivos hacia la comunidad en un mitin de Donald Trump en Nueva York. Kamala Harris se dirige a los votantes de Michigan por última vez  Kamala Harris se dirige a los votantes de Michigan por última vez, uno de los estados clave que siguen sin marcar tendencia previo al gran día de las elecciones. Michigan cuenta con 15 votos electorales que podrían hacer la diferencia para que Trump o Harris asuman la presidencia en una contienda que se encuentra sumamente reñida:  &quot;Nuestra campaña aprovecha las ambiciones, las aspiraciones y los sueños del pueblo estadounidense, porque somos optimistas y estamos entusiasmados por lo que podemos hacer juntos y porque sabemos que es hora de una nueva generación de liderazgo en Estados Unidos”, expresó la cndidata. “Michigan, estoy aquí para pedirles su voto (...) Necesitamos que todos voten en Michigan. Ustedes marcarán la diferencia en estas elecciones”, sentenció."
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="393dp"
+        android:layout_height="216dp"
+        android:src="@mipmap/eleccioneusa" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="139dp"
+        android:text="Guerra en Caza: Mas de 50 NIños mueren tras ataque de Israel contra Caza"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="248dp"
+        android:text="Más de 50 niños han muerto por los bombardeos israelíes en el norte de Gaza en las últimas 48 horas, según la directora ejecutiva del Fondo de las Naciones Unidas para la Infancia (Unicef). Además, se informa de un ataque contra un miembro del personal de esta organización, que trabajaba en el enclave en una campaña de vacunación contra la polio."
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="556dp"
+        android:layout_height="233dp"
+        android:src="@mipmap/guerracaza" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="154dp"
+        android:text="La Inflacion de Honduras en Octubre fue negativa en 0,005 % segun el Banco Central"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="La inflación de Honduras en octubre fue negativa en 0,05 %, mostrando una reducción mensual por primera vez desde agosto de 2022, informó este sábado el Banco Central del país centroamericano (BCH).  «Este comportamiento se atribuye principalmente a la disminución del índice del rubro alimentos y bebidas no alcohólicas, provocada principalmente por la caída de precios de algunos productos de origen agrícola, destacando algunos granos básicos (fríjol y maíz)», indicó el BCH en su informe mensual.  Se suman las caídas de precios de algunas hortalizas como tomate, patata, cebolla y lechuga, entre otras, y la reducción en el precio promedio ponderado de los combustibles para uso de vehículos y doméstico."
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="476dp"
+        android:layout_height="245dp"
+        android:src="@mipmap/inflacionHonduras" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="117dp"
+        android:text="Iran podria implicar a asu Ejercito en un ataque contra Israel"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="829dp"
+        android:text="Irán advirtió de un ataque de represalia &quot;fuerte y complejo&quot; que probablemente alcanzará objetivos militares, y que será &quot;mucho más agresivo que la última vez&quot;.Irán podría aumentar la escala de un posible ataque de represalia contra Israel implicando al Ejército regular además del Cuerpo de la Guardia Revolucionaria Islámica (CGRI), informó el Wall Street Journal citando a funcionarios iraníes y árabes.  Según las fuentes, dado que el ataque israelí del 26 de octubre causó la muerte de cuatro soldados y un civil, las autoridades iraníes tienen la intención de implicar al Ejército regular. Sin embargo, esto no significa que Irán vaya a desplegar sus tropas, sino que el CGRI ya no actuará en solitario, señalaron.&quot;Nuestros militares perdieron gente, así que tienen que responder&quot;, dijo un funcionario iraní. En este sentido, Irán advirtió de una respuesta &quot;fuerte y compleja&quot; que probablemente tendrá lugar sobre objetivos militares, y que será &quot;mucho más agresiva que la última vez&quot;.  También se reporta que las autoridades iraníes no tienen intención de limitar la posible respuesta a misiles y drones, como hicieron en ataques anteriores. Al mismo tiempo, los misiles que pudieran utilizarse en caso de respuesta al ataque israelí del 26 de octubre estarían equipados con ojivas más potentes."
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="514dp"
+        android:layout_height="256dp"
+        android:src="@mipmap/ataqueiraniisrael" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="match_parent"
+        android:layout_height="112dp"
+        android:text="Zelenski esta &quot;agotado y estresado&quot;"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="match_parent"
+        android:layout_height="821dp"
+        android:text="Los éxitos militares de Moscú y la incertidumbre sobre las elecciones en EE.UU. hacen que el ánimo de los funcionarios ucranianos y estadounidenses sea cada vez más pesimista. Ucrania se siente cada vez más pesimista en medio de los avances del Ejército ruso en el campo de batalla y la incertidumbre sobre el resultado de las elecciones presidenciales en EE.UU., informa The New York Times, citando funcionarios militares y de inteligencia del país norteamericano.  En la última reunión que mantuvieron la semana pasada, los interlocutores del medio aseguraron que Vladímir Zelenski &quot;se veía agotado y estresado, ansioso por los reveses sufridos por sus tropas en el campo de batalla, así como por las elecciones estadounidenses&quot;. El líder del régimen de Kiev no es el único que se siente preocupado por la situación en el frente, pues el pesimismo se percibe incluso entre los funcionarios de EE.UU. Además, la moral del Ejército ucraniano también se ha debilitado ante los avances de las tropas rusas y la falta de soldados y municiones.  El Pentágono estima que Ucrania tiene suficientes soldados para luchar entre seis y doce meses más. Después de este plazo, el país se enfrentará a una grave escasez, indicó un funcionario."
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="629dp"
+        android:layout_height="337dp"
+        android:src="@mipmap/zelensky" />
+
+</LinearLayout>
+    </ScrollView>

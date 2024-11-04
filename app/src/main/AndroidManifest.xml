@@ -12,19 +12,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProyectoMovil1"
         tools:targetApi="31">
+
+        <!-- Actividad de Login como actividad principal -->
         <activity
-            android:name=".MainActivity"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+            android:name=".Login"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+
+        <!-- Actividad MainActivity -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
             <meta-data
                 android:name="android.app.lib_name"
-                android:value=""/>
+                android:value="" />
         </activity>
+
     </application>
 
 </manifest>
