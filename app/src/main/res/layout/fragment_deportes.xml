@@ -1,17 +1,111 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".DeportesFragment">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Deportes"
-        android:textSize="30sp"
-        android:layout_centerInParent="true"
-        android:textColor="@color/azulito"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
+        <!-- Título principal de la sección -->
+        <TextView
+            android:id="@+id/tituloPrincipal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sección de deportes"
+            android:textSize="24sp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
 
-</RelativeLayout>
+        <!-- Título del clásico Barcelona vs Real Madrid -->
+        <TextView
+            android:id="@+id/tituloClasico"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clásico Barcelona Real Madrid"
+            android:textSize="20sp"
+            android:layout_below="@id/tituloPrincipal"
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true" />
+
+        <!-- Texto de descripción del clásico -->
+        <TextView
+            android:id="@+id/textoDeportes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tituloClasico"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="En el último clásico entre Barcelona y Real Madrid, los equipos ofrecieron un emocionante duelo lleno de idas y venidas. Barcelona se adelantó con un gol de Ilkay Gündogan, pero fue Jude Bellingham quien destacó al remontar para el Real Madrid. Bellingham empató el marcador con un potente disparo de larga distancia en el minuto 68, y más adelante, en el tiempo de descuento, anotó el gol de la victoria tras recibir un pase de Dani Carvajal, asegurando el triunfo por 2-1 para los madridistas en el Estadio Olímpico Lluís Companys en Montjuïc​"
+            android:textSize="16sp" />
+
+        <!-- Imagen del clásico -->
+        <ImageView
+            android:id="@+id/imagenClasico"
+            android:layout_width="match_parent"
+            android:layout_height="168dp"
+            android:layout_below="@id/textoDeportes"
+            android:layout_marginTop="16dp"
+            android:contentDescription="Imagen del clásico Barcelona vs Real Madrid"
+            android:src="@drawable/clasico" />
+
+        <!-- Título de la NBA -->
+        <TextView
+            android:id="@+id/tituloNBA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lo Último de la NBA"
+            android:textSize="20sp"
+            android:layout_below="@id/imagenClasico"
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true" />
+
+        <!-- Texto de descripción de la NBA -->
+        <TextView
+            android:id="@+id/textoNBA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tituloNBA"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="La temporada de la NBA 2024 ha comenzado con emocionantes partidos y algunas sorpresas. Uno de los equipos que ha destacado hasta ahora es el Denver Nuggets, quienes defienden su título de campeones tras una brillante campaña el año pasado. Nikola Jokić sigue demostrando ser un jugador clave, liderando a su equipo en puntos y asistencias.  El Los Angeles Lakers han tenido un inicio sólido, con LeBron James mostrando que todavía tiene mucho que ofrecer en la cancha. Junto a Anthony Davis, están buscando llevar al equipo de vuelta a los playoffs. Sin embargo, la rivalidad en la Conferencia Oeste se intensifica, ya que equipos como los Golden State Warriors y los Phoenix Suns están compitiendo fuerte por los primeros puestos.  En la Conferencia Este, los Milwaukee Bucks están en plena forma, impulsados por el talento de Giannis Antetokounmpo. Los Bucks han ganado varios partidos de forma convincente y parecen ser uno de los principales contendientes.  No obstante, no todo ha sido positivo, ya que varias estrellas han sufrido lesiones. La NBA está monitoreando de cerca la situación de jugadores como Kawhi Leonard y Kevin Durant, quienes han estado lidiando con problemas de salud. Esto podría impactar significativamente en sus respectivos equipos a medida que avanza la temporada.  Con más de la mitad de la temporada por jugar, los aficionados están ansiosos por ver cómo se desarrollan las rivalidades y qué sorpresas nos deparará el resto del campeonato."
+            android:textSize="16sp" />
+
+        <!-- Imagen de la NBA -->
+        <ImageView
+            android:id="@+id/imagenNba"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textoNBA"
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/b"
+            android:contentDescription="Imagen de la NBA" />
+
+        <!-- Título de Próximos Partidos -->
+        <TextView
+            android:id="@+id/partidos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Próximos Partidos"
+            android:textSize="20sp"
+            android:layout_below="@id/imagenNba"
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true" />
+
+        <!-- Imagen de Próximos Partidos -->
+        <ImageView
+            android:id="@+id/imagenPP"
+            android:layout_width="459dp"
+            android:layout_height="568dp"
+            android:layout_below="@id/partidos"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:contentDescription="Imagen de Próximos Partidos"
+            android:src="@drawable/partidos" />
+
+    </RelativeLayout>
+</ScrollView>
+

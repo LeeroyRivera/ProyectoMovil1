@@ -85,7 +85,7 @@
         android:id="@+id/imageView4"
         android:layout_width="476dp"
         android:layout_height="245dp"
-        android:src="@mipmap/inflacionHonduras" />
+        android:src="@mipmap/inflacionhonduras" />
 
     <TextView
         android:id="@+id/textView10"
