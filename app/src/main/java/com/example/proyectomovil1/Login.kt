@@ -24,16 +24,16 @@ class Login : AppCompatActivity() {
         val editTextContrasena: EditText = findViewById(R.id.contraseña)
         val btn: Button = findViewById(R.id.btningresar)
 
-        btn.setOnClickListener ({
+        btn.setOnClickListener {
             val usuario = editTextUsuario.text.toString()
             val contrasena = editTextContrasena.text.toString()
 
-            if (usuario == "Luca" && contrasena == "1234") {
+            if (usuario == "Admin" && contrasena == "1234") {
                 val intent2 = Intent(this, MainActivity::class.java)
                 startActivity(intent2)
             } else {
                 Toast.makeText(this, "Usuario o contraseña incorrectos", Toast.LENGTH_SHORT).show()
             }
-        })
+        }
     }
 }

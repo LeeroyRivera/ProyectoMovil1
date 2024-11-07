@@ -12,21 +12,21 @@
 
         <item
             android:id="@+id/nav_politica"
-            android:icon="@drawable/home"
+            android:icon="@drawable/icono_politica"
             android:title="Politica" />
         <item
             android:id="@+id/nav_deportes"
-            android:icon="@drawable/home"
+            android:icon="@drawable/icono_deportes"
             android:title="Deportes" />
 
         <item
             android:id="@+id/nav_entrenimiento"
-            android:icon="@drawable/home"
+            android:icon="@drawable/icono_entrenimiento"
             android:title="Entretenimiento" />
 
         <item
             android:id="@+id/nav_internacional"
-            android:icon="@drawable/home"
+            android:icon="@drawable/icono_internacional"
             android:title="Internacional" />
 
 
@@ -37,7 +37,7 @@
         <menu>
             <item
                 android:id="@+id/nav_salir"
-                android:icon="@color/black"
+                android:icon="@drawable/icono_salir"
                 android:title="Salir"/>
         </menu>
     </item>

@@ -58,7 +58,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             R.id.nav_internacional -> supportFragmentManager.beginTransaction()
                 .replace(R.id.fragment_container, InternacionalFragment()).commit()
 
-            R.id.nav_salir -> Toast.makeText(this, "Salir", Toast.LENGTH_SHORT).show()
+            R.id.nav_salir -> finishAffinity()
         }
         drawerLayout.closeDrawer(GravityCompat.START)
         return true
