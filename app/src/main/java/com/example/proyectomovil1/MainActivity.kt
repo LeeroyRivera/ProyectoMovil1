@@ -5,6 +5,7 @@ import android.view.Gravity
 import android.view.MenuItem
 import android.widget.Toast
 import android.widget.Toolbar
+import androidx.activity.addCallback
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
@@ -24,6 +25,9 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         setContentView(R.layout.activity_main)
 
         drawerLayout = findViewById<DrawerLayout>(R.id.drawer_layout)
+
+        val callback = onBackPressedDispatcher.addCallback(this) {}
+        callback.isEnabled = true
 
         val toolbar = findViewById<androidx.appcompat.widget.Toolbar>(R.id.toolbar1)
         setSupportActionBar(toolbar)
